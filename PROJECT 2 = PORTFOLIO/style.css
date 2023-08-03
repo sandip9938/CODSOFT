@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  
+  font-family: "Kanit", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.section {
+  background-color: var(--bg-black-900);
+  min-height: 100vh;
+  display: block;
+  /* position: fixed;
+  left: 270px; */
+  /* top: 0;
+  right: 0; */
+padding: 0 30px;
+  opacity: 1;
+  /* z-index: 0; */
+}
+.aside {
+  width: 270px;
+  background-color: var(--bg-black-100);
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border-right: 2px solid rgb(202, 201, 201);
+}
+ul {
+  list-style: none;
+}
+.aside .logo {
+  position: absolute;
+  top: 50px;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-family: "Kanit", sans-serif;
+}
+
+.aside .logo a {
+  color: var(--bg-black-900);
+  font-weight: 900;
+  letter-spacing: 5px;
+  padding: 15px 20px;
+  position: relative;
+}
+.aside .logo a span {
+  font-size: 80px;
+  font-family: "Italianno", cursive;
+}
+.aside .logo a ::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 24px;
+  border-bottom: 5px solid red;
+  border-left: 5px solid red;
+  bottom: 0;
+  left: 0;
+}
+.aside .logo a ::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 24px;
+  border-top: 5px solid red;
+  border-right: 5px solid red;
+  top: 0;
+  right: 0;
+}
+
+.aside .nav{
+margin-top: 60px;
+}
+.aside .nav li{
+    margin-bottom:20px;
+ display: block;
+}
+.aside .nav li a{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    color: black ;
+padding: 5px 15px;
+border-bottom: 1px solid rgb(95, 95, 95);
+
+}
+/* .aside .nav li a.active{
+
+} */
+
+.aside .nav li a i{
+    color: red;
+    margin: 10px;
+}
+.aside .nav_toggler{
+    height: 40px;
+    width: 35px;
+    border: 1px solid rgb(176, 174, 174);
+    position: fixed;
+    cursor: pointer;
+    border-radius: 5px;
+    left: 300px;
+    top: 20px;
+    background-color: rgb(229, 233, 233);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.aside .nav_toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: red;
+    display: inline-block;
+}
+.aside .nav_toggler span::before{
+    content:'';
+    height: 2px;
+    width: 20px;
+    background-color:red;;
+    position: absolute;
+    top: 12px;
+    left: 3;
+}
+.aside .nav_toggler span::after{
+    content:'';
+    height: 2px;
+    width: 20px;
+    background-color:red;;
+    position: absolute;
+    bottom: 12px;
+    right: 3;
+}
+.home .homeimg img{
+    height: 500px;
+
+}
+.container{
+    max-width: 1100px;
+    width: 100%;
+   
+    margin: auto;
+}
+.row{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+.home{
+    min-height: 100vh;
+   display: flex;
+    color: black;
+}
+.home .homeinfo{
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+.home .homeimg{
+    flex: 0 0 40%;
+    max-width: 40%;
+   
+    text-align: center;
+    position: relative;
+}
+.padd-15{
+    padding-left: 15px;
+   padding-right: 15px;
+}
+h3.hello{
+    font-size: 29px;
+    margin: 15px 0;
+}
+h3.hello span{
+    font-family: "Italianno", cursive;
+    font-size: 60px;
+    font-weight: 900;
+    color: red;
+    letter-spacing: 3px;
+    margin: 10px;
+}
+h3.myproffesion{
+    font-size: 28px;
+    line-height: normal!important;
+    margin: 15px 0;
+
+}
+.fsw{
+    font-family: "Italianno", cursive;
+    font-size: 40px;
+    font-weight: 900;
+    color: red;
+    letter-spacing: 3px;
+    margin: 10px; 
+}
+.homeinfo p{
+    margin-bottom: 70px;
+    font-size: 20px;
+    letter-spacing: 2px;
+   font-weight: 700;
+}
+.btnhireme{
+    font-size: 18px;
+    font-weight: 600 ;
+    padding: 12px 35px;
+    background-color: red;
+    color: black;
+    border-radius: 5px;
+}
+.btnhireme:hover{
+background-color: antiquewhite;
+color: red;
+border: 2px solid black;
+font-size: 20px;
+font-weight: 600;
+
+}
+.homeimg::after{
+    content:'';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-bottom: 10px solid red;
+    border-right: 10px solid red;
+    right: 5px;
+    bottom: -20px;
+}
+.homeimg::before{
+    content:'';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-top: 10px solid red;
+    border-left: 10px solid red;
+    left: 2px;
+    top: -30px;
+}
+.homeimg img{
+    border-radius: 15px;
+}
+.main_container{
+ padding-left: 270px;
+}
