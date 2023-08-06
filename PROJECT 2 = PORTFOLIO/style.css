@@ -2,8 +2,9 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-
+background-color: #212121;
   font-family: "Kanit", sans-serif;
+  color: white;
 }
 
 * {
@@ -22,9 +23,9 @@ body {
 .section {
   background-color: var(--bg-black-900);
   min-height: 100vh;
-  display: block;
-  /* position: fixed;
-  left: 270px; */
+  /* display: block; */
+/* position: fixed; */
+  left: 270px; 
   /* top: 0;
   right: 0; */
   padding: 0 30px;
@@ -108,7 +109,7 @@ ul {
   font-size: 20px;
   font-weight: 600;
   display: block;
-  color: black;
+color: white;
   padding: 5px 15px;
   border-bottom: 1px solid rgb(95, 95, 95);
 }
@@ -126,7 +127,7 @@ ul {
   height: 40px;
   width: 35px;
   border: 1px solid rgb(176, 174, 174);
-  position: fixed;
+  position: fired;
   cursor: pointer;
   border-radius: 5px;
   left: 300px;
@@ -188,7 +189,7 @@ ul {
 .home {
   min-height: 100vh;
   display: flex;
-  color: black;
+  color: white;
 }
 
 .home .homeinfo {
@@ -243,6 +244,7 @@ h3.myproffesion {
   font-size: 20px;
   letter-spacing: 2px;
   font-weight: 700;
+  
 }
 
 .btnhireme {
@@ -250,7 +252,7 @@ h3.myproffesion {
   font-weight: 600;
   padding: 12px 35px;
   background-color: red;
-  color: black;
+ color: rgb(250, 249, 249);
   border-radius: 5px;
 }
 
@@ -480,7 +482,7 @@ h3.myproffesion {
 .About .about_box .skills .skillitem .progressbar .skillpercent {
   position: absolute;
   right: 0;
-  color: black;
+  color: rgb(249, 246, 246);
   font-weight: 900;
   top: -40px;
   line-height: 40px;
@@ -491,13 +493,15 @@ h3.myproffesion {
   flex: 0 0 50%;
   max-width: 50%;
   margin-top: 30px;
+  color: black;
 }
 
-.About .about_box .edu {
+.About .about_box redu {
   font-size: 30px;
   margin-bottom: 20px !important;
   font-weight: 900;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+color: rgb(255, 252, 252);
+  
 }
 
 .About .about_box .timeline_container {
@@ -604,7 +608,7 @@ h3.myproffesion {
 }
 
 .service_section .service_item .service_item_inner h4 {
-  color: rgb(8, 8, 8);
+  color: rgb(6, 6, 6);
   margin: 5px;
   font-weight: 900;
   font-size: 25px;
@@ -616,6 +620,7 @@ h3.myproffesion {
   margin-bottom: 15px;
   text-transform: capitalize;
   font-weight: 500;
+  color: black;
 }
 
 .service_section .service_item .service_item_inner i {
@@ -665,9 +670,69 @@ h3.myproffesion {
 
 }
 .cst{
-  color: rgb(11, 11, 11);
+  color: rgb(250, 248, 248);
   text-align: center;
   font-size: 15px ;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   
+}
+.contact .item{
+  flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+  margin-bottom: 35px;
+
+}
+.contact .item i{
+  display: inline-block;
+font-size: 25px;
+color: red;
+margin: 5px;
+}
+.contact .item h4{
+  font-size: 18px!important;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin: 10px ;
+ 
+}
+.contact .item p{
+  font-size: 15px;
+  font-weight: 900;
+  color: rgb(117, 117, 117);
+}
+.csp{
+ font-size: 25px;
+ color: red;
+ font-weight: 900;
+ margin: auto;
+ text-shadow: 2px 1px black;
+ letter-spacing: 2px;
+}
+.contact .cform{
+  flex: 0 0 100%;
+  max-width: 100%;
+justify-content: space-between;
+}
+
+.contact .cform .c6{
+  flex: 0 0 50%;
+  max-width: 50%;
+ 
+}
+.contact .cform .c12{
+  flex: 0 0 100%;
+  max-width: 100%;
+
+}
+.contact .cform .formitem{
+  margin-bottom: 30px;
+}
+.contact .cform .formitem .formctrl{
+  width: 100%;
+  height: 50px;
+border-radius: 14px;
+border: 2px solid black;
+background-color: #f3f1f0;
+padding: 10px 25px;
 }
